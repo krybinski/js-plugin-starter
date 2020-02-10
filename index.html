@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VanillaJS plugin starter</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Create instance of a plugin
+        const elem = document.getElementById('app');
+        const instance = new UserList(elem);
+
+        // Initialize
+        instance.init();
+      });
+    </script>
+  </body>
+</html>
